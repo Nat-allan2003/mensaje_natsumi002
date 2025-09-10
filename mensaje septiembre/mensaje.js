@@ -1,6 +1,6 @@
 const chatWindow = document.querySelector('.chat-window');
 const finishBtn = document.getElementById('finishBtn');
-const avatarSrc = "imagenes/avatar1.png"; // Avatar de Paula
+const avatarSrc = "./imagenes/avatar1.png"; // Avatar de Paula
 
 // Mensajes del chat
 const messages = [
@@ -9,10 +9,10 @@ const messages = [
     { text: "Pero tengo la costumbre de siempre darte algo, ya sea fisico o tecnologico", type: "sent" },
     { text: "Es gracioso porque lo que se, lo uso para hacerte maravillas.", type: "sent" },
     { text: "Hemos pasado por tanto pauli, lamento mucho en como quedamos", type: "sent" },
-    { type: "image", src: "imagenes/meme1.png" }, 
+    { type: "image", src: "./imagenes/meme1.png" }, 
     { text: "Quisiera poder retroceder el tiempo para poder ser una mejor persona para ti", type: "sent"},   
     { text: "Es septiembre, septiembre de flores amarillas...", type: "sent" },
-    { type: "image", src: "imagenes/flores.png" }, 
+    { type: "image", src: "./imagenes/flores.png" }, 
     { text: "Estas son para ti... I'm sorry", type: "sent" },
     { text: "Espero que este programa te haga sonreír.", type: "sent" },
     { text: "No es mucho, pero es un pedacito de mí que quería compartir contigo.", type: "sent" },
@@ -20,7 +20,7 @@ const messages = [
     { text: "Al finalizar se cerrará la pagina y te dará error, esta programado así", type: "sent" },
     { text: "Perdon por darte este tipo de detalles, es lo que al menos se me ocurre ", type: "sent" },
     { text: "Quisiera agradecerte todo los bonitos momentos, las risas, la felicidad que pude sentir, lamento si no fui la persona que esperabas que sea, me gusta verte sonreir, cumplir tus sueños, estar presente en cada uno de tus logros, hacerte compañia y escucharte, eres lo mejor que me pude haber pasado :c ", type: "sent" },
-    { type: "image", src: "imagenes/paula1.png" }, 
+    { type: "image", src: "./imagenes/paula1.png" }, 
     { text: "Como siempre te diré: Estoy para ayudar :D", type: "sent" },
     { text: "Paula Narvaez, ha pesar de la distancia y el tiempo, siempre te querré asi sea desde las sombras", type: "sent" },
     { text: "Eres la mejor abogada que puede existir, puedes alcanzar tus metas si te los propones, eres fuerte... no lo olvides", type: "sent" },
@@ -30,7 +30,7 @@ const messages = [
     { text: "Las noches ya no son igual sin tu presencia", type: "sent" },
     { text: "Nunca lo olvides, lo que es mio es tuyo.... TKM", type: "sent" },
     { text: "Siempre te voy a querer tal y como eres, asi con todos tus problemas y defectos, eres mi guapa 7u7 eres alguien importante para mi, no tengo la valentia en decirtelo face to face pero lo transmito por aqui, jaja mi creatividad es grande", type: "sent" },
-    { type: "image", src: "imagenes/paula2.png" }, 
+    { type: "image", src: "./imagenes/paula2.png" }, 
     { text: "Aun tengo muchos programas que hacerte y regalarte, siempre te haz merecido lo mejor Paula, al menos para mi siempre ha sido así", type: "sent" },
     { text: "Ahora te toca a ti guardar estas palabras en un rincón de tu corazón.", type: "sent" },
     { text: " - Con cariño y sinceridad, Fernando -", type: "sent" },
@@ -129,7 +129,6 @@ function showMessages(index = 0) {
         finishBtn.style.transition = "opacity 1s ease-in-out";
         setTimeout(() => { finishBtn.style.opacity = 1; }, 100);
 
-        // Timeout 10 segundos para auto-destrucción
         setTimeout(() => autoDestroy(), 10000);
         return;
     }
@@ -158,5 +157,4 @@ document.addEventListener('DOMContentLoaded', () => {
     showMessages(0);
 
     finishBtn.addEventListener('click', () => autoDestroy());
-
 });
