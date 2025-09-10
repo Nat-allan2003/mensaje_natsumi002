@@ -144,7 +144,7 @@ body {
 .bubble {
     position: absolute;
     border-radius: 50%;
-    background: rgba(100, 180, 255, 0.25); /* Celeste visible */
+    background: rgba(0, 150, 255, 0.35); /* Celeste intenso */
     animation: floatUp linear forwards;
     pointer-events: none;
 }
@@ -182,4 +182,5 @@ body {
         padding: 8px 12px;
     }
 }
+
 
