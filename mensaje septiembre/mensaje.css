@@ -17,8 +17,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
             padding: 10px; /* Espacio adicional en móviles */
+            min-height: 100vh; /* Para que se ajuste en móviles */
         }
 
         /* Contenedor principal mejorado */
@@ -255,3 +255,4 @@
                 font-size: 16px !important;
             }
         }
+
