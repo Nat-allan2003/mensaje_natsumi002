@@ -31,9 +31,11 @@ const messages = [
     { text: "Nunca lo olvides, lo que es mio es tuyo.... TKM", type: "sent" },
     { text: "Siempre te voy a querer tal y como eres, asi con todos tus problemas y defectos, eres mi guapa 7u7 eres alguien importante para mi, no tengo la valentia en decirtelo face to face pero lo transmito por aqui, jaja mi creatividad es grande", type: "sent" },
     { type: "image", src: "imagenes/paula2.png" }, 
+    { text: "Aun tengo muchos programas que hacerte y regalarte, siempre te haz merecido lo mejor Paula, al menos para mi siempre ha sido así", type: "sent" },
     { text: "Ahora te toca a ti guardar estas palabras en un rincón de tu corazón.", type: "sent" },
     { text: " - Con cariño y sinceridad, Fernando -", type: "sent" },
     { text: "Por cierto, este programa se cerrará en 10seg, Que pases bonita noche, tarde o dia", type: "sent" },
+    { text: "PD: Todo lo que hago por ti es con cariño :3 MIAU!", type: "sent" },
 ];
 
 // Función de tipeo
@@ -156,4 +158,5 @@ document.addEventListener('DOMContentLoaded', () => {
     showMessages(0);
 
     finishBtn.addEventListener('click', () => autoDestroy());
+
 });
